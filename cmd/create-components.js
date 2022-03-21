@@ -6,7 +6,7 @@ const camelizedcomponentName = camelize(componentName);
 const newComponents = `./src/${camelizedcomponentName}`;
 const newComponentFile = `${newComponents}/index.tsx`;
 
-if (fs.existsSync(newComponents)) throw new Error('Command Exists');
+if (fs.existsSync(newComponents)) throw new Error('Component Exists');
 
 fs.mkdirSync(newComponents, { recursive: true });
 
